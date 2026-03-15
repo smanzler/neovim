@@ -7,9 +7,9 @@ return {
     opts = {
       ensure_installed = {
         'vtsls',
-	'lua_ls',
-	'tailwindcss',
-	'eslint'
+        'lua_ls',
+        'tailwindcss',
+        'eslint'
       }
     }
   },
