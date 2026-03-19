@@ -12,6 +12,13 @@ return {
       { "<leader>fg", builtin.git_files,  desc = "Git Files" },
       { "<leader>fs", builtin.live_grep,  desc = "Live Grep" },
       { "<leader>fb", builtin.buffers,    desc = "Buffers" },
+      {
+        "<leader>fd",
+        function()
+          builtin.fd({ find_command = { "fd", "-t=d" } })
+        end,
+        desc = "Find Directories"
+      },
     }
   end,
 }
